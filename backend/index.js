@@ -1,14 +1,11 @@
 const express = require("express");
 const axios = require("axios");
 const app = express();
+// allow cors
 const cors = require("cors");
 const port = 4000;
 
-const corsOptions = {
-  origin: "http://localhost:3000",
-};
-
-app.get("/api/allCountries", cors(corsOptions), async (req, res) => {
+app.get("/api/allCountries", cors(), async (req, res) => {
   const countriesResponse = await axios.get("https://restcountries.com/v2/all");
   console.log(req);
   if (countriesResponse.status === 200) {
