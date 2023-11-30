@@ -1,4 +1,4 @@
-### Countries challange
+### Countries challenge
 
 Simple application for you to quickly browse all countries for information about their population, language, currencies etc..
 
@@ -24,4 +24,4 @@ To setup the backend part of the application:
 
 ### Check it out!
 
-TODO
+https://countriesfront.onrender.com/
